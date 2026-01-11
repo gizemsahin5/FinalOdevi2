@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Başlık: Ortalanmış ve üstte biraz boşluk var -->
+    <TextView
+        android:id="@+id/tvBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alışveriş Listesi"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:textColor="#000000"/>
+
+    <!-- Ürün adı EditText -->
+    <EditText
+        android:id="@+id/etUrun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün adı"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Miktar EditText -->
+    <EditText
+        android:id="@+id/etMiktar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Miktar (isteğe bağlı)"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Birim Spinner -->
+    <Spinner
+        android:id="@+id/spBirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ekle Butonu -->
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Liste -->
+    <ListView
+        android:id="@+id/lvListe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
